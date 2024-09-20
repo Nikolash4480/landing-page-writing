@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(35, 40, 48, 1);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+/*HEADER*/
+header {
+  margin: 10px 10px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2em;
+  font-size: 1.5em;
+}
+.writing {
+  font-size: 30px;
+  line-height: 45px;
+}
+.option-header {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.tooltip {
+  color: #FFFFFF;
+  text-decoration: none;
+  position: relative;
+  height: 36px;
+  font-size: 24px;
+  margin: 8px;
+}
+/*MAIN*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*-------HERO-------*/
+.hero {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 80px;
+  max-width: 900px;
+  text-align: center;
+}
+.logo {
+  display: flex;
+  padding: 10px;
+}
+.title {
+  font-family: 'Recursive';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 85px;
+  color: #FF7575;
+}
+.sub-title {
+  height: 45px;
+  font-size: 29px;
+  line-height: 44px;
+}
+/*-------CATEGORY-------*/
+.category {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.linea-horizontal {
+  border-bottom: 1px solid rgba(77, 77, 77, 1);
+  width: 100%;
+}
+.category-listen {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.category-listen ul li,  
+.pagination li {
+  display: inline-block;
+  margin: 10px 5px;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Recursive';
+  font-style: italic;
+  font-size: 27px;
+  line-height: 32px;
+}
+.category-listen ul li a,
+.pagination li a{
+  text-decoration: none;
+  color: #909090;
+}
+.category-listen a:last-child {
+  mask-image: linear-gradient(to right, rgba(35, 40, 48, 1)), rgba(35, 40, 48, 0);
+}
+.category-listen ul li img {
+  width: 24px;
+  height: 24px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: -4.55%;
+}
+/*-------ARTICLES-------*/
+.articles-listing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.article {
+  width: 390px;
+  height: 439px;
+  background: #FFFFFF;
+  color: #252930;
+  border: 1px solid #252930;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.article div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 22px;
+}
+.article .image {
+  position: relative;
+  width: 330px;
+  height: 160px;
+  padding: 15px;
+  border-radius: 22px;
+
+}
+.content h4 {
+  font-size: 19px;
+}
+.content p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0F1217;
+}
+.content .date {
+  justify-content: flex-start;
+  display: flex;
+}
+.content span {
+  align-items: center;
+  align-content: flex-end;
+  display: flex;
+}
+.punto {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #252930;
+  margin: 0 10px;
+}
+.skeleton-image {
+  background-color: #e0e0e0;
+  animation: pulse 1.5s infinite alternate;
+}
+@keyframes pulse {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*-------FOOTER-------*/
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer nav {
+  padding: 80px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.pagination a {
+  margin: 10px;
+  font-family: Recursive;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+.pagination li:nth-child(3) a {
+  color: rgba(255, 117, 117, 1);
+  border-top: 2px solid rgba(255, 117, 117, 1);
+  padding-top: 10px;
+}
+.pagination .text {
+  font-weight: 400;
+}
+.writing-by {
+  font-size: 30px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.writing-by span {
+  background: rgba(70, 153, 224, 1);
+  font-size: 19px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  line-height: 23.88px;
+}
